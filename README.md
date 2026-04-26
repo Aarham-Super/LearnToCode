@@ -20,31 +20,31 @@ It is designed as a modern learning platform with authentication, database integ
 
 
 
-\---
+---
 
 
 
-\## ⚙️ Tech Stack
+## ⚙️ Tech Stack
 
 
 
-\- ASP.NET Core (.NET 10)
+- ASP.NET Core (.NET 10)
 
-\- C#
+- C#
 
-\- MySQL
+- MySQL
 
-\- Entity Framework Core
+- Entity Framework Core
 
-\- HTML, CSS, JavaScript
+- HTML, CSS, JavaScript
 
-\- Google OAuth Login
+- Google OAuth Login
 
-\- GitHub OAuth Login
+- GitHub OAuth Login
 
 
 
-\---
+---
 
 
 
@@ -86,25 +86,25 @@ LearnToCode/
 
 - Views/
 
-\- wwwroot/
+- wwwroot/
 
-\- Data/
+- Data/
 
-\- Services/
+- Services/
 
-\- appsettings.json
+- appsettings.json
 
-\- Program.cs
+- Program.cs
 
-\- LearnToCode.csproj
-
-
-
-\---
+- LearnToCode.csproj
 
 
 
-\## 🚀 Deployment
+---
+
+
+
+## 🚀 Deployment
 
 
 
@@ -120,29 +120,29 @@ Upload the publish folder to /wwwroot on your hosting server.
 
 
 
-\---
+---
 
 
 
-\## 🔑 Environment Variables
+## 🔑 Environment Variables
 
 
 
-\- Database connection string
+- Database connection string
 
-\- Google OAuth credentials
+- Google OAuth credentials
 
-\- GitHub OAuth credentials
+- GitHub OAuth credentials
 
-\- API keys
-
-
-
-\---
+- API keys
 
 
 
-\## 📦 Setup Locally
+---
+
+
+
+## 📦 Setup Locally
 
 
 
@@ -156,51 +156,51 @@ dotnet run
 
 
 
-\---
+---
 
 
 
-\## 🛡️ Security
+## 🛡️ Security
 
 
 
-\- No secrets stored in repository
+- No secrets stored in repository
 
-\- .gitignore properly configured
+- .gitignore properly configured
 
-\- OAuth authentication enabled
+- OAuth authentication enabled
 
-\- Environment variables used for sensitive data
-
-
-
-\---
+- Environment variables used for sensitive data
 
 
 
-\## 📈 Future Plans
+---
 
 
 
-\- AI-powered learning assistant
-
-\- Course system with lessons
-
-\- User dashboard improvements
-
-\- Monetization (ads integration)
-
-\- Performance optimization
-
-\- Mobile-friendly upgrade
+## 📈 Future Plans
 
 
 
-\---
+- AI-powered learning assistant
+
+- Course system with lessons
+
+- User dashboard improvements
+
+- Monetization (ads integration)
+
+- Performance optimization
+
+- Mobile-friendly upgrade
 
 
 
-\## 👨‍💻 Author
+---
+
+
+
+## 👨‍💻 Author
 
 
 
@@ -208,11 +208,11 @@ Built by Aarham
 
 
 
-\---
+---
 
 
 
-\## 📜 License
+## 📜 License
 
 
 
