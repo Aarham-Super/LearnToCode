@@ -1,4 +1,4 @@
-\# LearnToCode 🚀
+# LearnToCode 🚀
 
 
 
@@ -8,11 +8,11 @@ It is designed as a modern learning platform with authentication, database integ
 
 
 
-\---
+---
 
 
 
-\## 🌐 Live Site
+## 🌐 Live Site
 
 
 
@@ -48,43 +48,43 @@ It is designed as a modern learning platform with authentication, database integ
 
 
 
-\## 🔐 Features
+## 🔐 Features
 
 
 
-\- User Registration \& Login system
+- User Registration \& Login system
 
-\- Google Authentication
+- Google Authentication
 
-\- GitHub Authentication
+- GitHub Authentication
 
-\- Secure session handling
+- Secure session handling
 
-\- MySQL database integration
+- MySQL database integration
 
-\- Learning progress tracking system
+- Learning progress tracking system
 
-\- API-ready backend architecture
+- API-ready backend architecture
 
-\- Responsive frontend design
-
-
-
-\---
+- Responsive frontend design
 
 
 
-\## 🗂️ Project Structure
+---
+
+
+
+## 🗂️ Project Structure
 
 
 
 LearnToCode/
 
-\- Controllers/
+- Controllers/
 
-\- Models/
+- Models/
 
-\- Views/
+- Views/
 
 \- wwwroot/
 
