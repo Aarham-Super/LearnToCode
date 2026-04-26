@@ -1,0 +1,27 @@
+@page
+@{
+    ViewData["Title"] = "Tutor";
+}
+
+<section class="page-hero">
+    <div>
+        <div class="eyebrow">AI chat tutor</div>
+        <h1>Ask why your code is wrong, or ask for a lesson.</h1>
+        <p class="muted">This side panel is built for conversational learning, not just automatic fixing.</p>
+    </div>
+</section>
+
+<section class="tutor-chat-shell dashboard-panel">
+    <div class="chat-messages" id="chat-messages">
+        <div class="chat-bubble chat-bubble--assistant">Try asking: "why is my code wrong?" or "teach me loops".</div>
+    </div>
+    <div class="chat-compose">
+        <input id="tutor-question" class="form-control form-control-dark" placeholder="Ask the tutor a question..." />
+        <button class="btn btn-primary" id="send-question" type="button">Send</button>
+    </div>
+</section>
+
+@section Scripts {
+    <script src="~/js/ai.js" asp-append-version="true"></script>
+    <script src="~/js/tutor.js" asp-append-version="true"></script>
+}

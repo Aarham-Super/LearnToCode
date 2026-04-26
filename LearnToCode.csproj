@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net10.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+
+		<!-- Dev settings -->
+		<DebugType>portable</DebugType>
+		<DebugSymbols>true</DebugSymbols>
+	</PropertyGroup>
+
+	<ItemGroup>
+
+		<!-- ===================== -->
+		<!-- DATABASE -->
+		<!-- ===================== -->
+		<PackageReference Include="MySql.Data" Version="9.0.0" />
+
+		<!-- ===================== -->
+		<!-- IDENTITY + AUTH -->
+		<!-- ===================== -->
+		<PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="10.0.0" />
+
+		<!-- Google Login -->
+		<PackageReference Include="Microsoft.AspNetCore.Authentication.Google" Version="10.0.0" />
+
+		<!-- GitHub OAuth -->
+		<PackageReference Include="AspNet.Security.OAuth.GitHub" Version="10.0.0" />
+
+		<!-- ===================== -->
+		<!-- LOGGING -->
+		<!-- ===================== -->
+		<PackageReference Include="Serilog.AspNetCore" Version="8.0.0" />
+
+	</ItemGroup>
+
+	<ItemGroup>
+		<!-- Razor runtime compilation (ONLY in debug) -->
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation"
+			Version="10.0.0"
+			Condition="'$(Configuration)' == 'Debug'" />
+	</ItemGroup>
+
+</Project>

@@ -1,0 +1,39 @@
+@page
+@{
+    ViewData["Title"] = "Learn";
+}
+
+<section class="page-hero">
+    <div>
+        <div class="eyebrow">Learn mode</div>
+        <h1>Break code into small steps and learn why it works.</h1>
+        <p class="muted">This page is for concept-first teaching with examples, practice prompts, and next-topic guidance.</p>
+    </div>
+</section>
+
+<section class="learning-grid">
+    <article class="feature-card">
+        <h3>How the tutor teaches</h3>
+        <ul class="check-list">
+            <li>Explains each line in beginner language.</li>
+            <li>Shows what the code does before saying what is wrong.</li>
+            <li>Returns corrected code with clear reasoning.</li>
+        </ul>
+    </article>
+    <article class="feature-card">
+        <h3>Progress dashboard</h3>
+        <p id="progress-summary" class="muted">Open the editor and analyze some code to populate your progress history.</p>
+    </article>
+    <article class="feature-card">
+        <h3>Suggested next topics</h3>
+        <div id="topic-list" class="pill-list">
+            <span class="pill">Variables</span>
+            <span class="pill">Loops</span>
+            <span class="pill">Functions</span>
+        </div>
+    </article>
+</section>
+
+@section Scripts {
+    <script src="~/js/ai.js" asp-append-version="true"></script>
+}

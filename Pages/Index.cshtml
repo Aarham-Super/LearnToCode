@@ -1,0 +1,78 @@
+@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<section class="hero-grid">
+    <div class="hero-card">
+        <div class="eyebrow">AI coding tutor</div>
+        <h1>LearnToCode explains, fixes, and teaches programming step by step.</h1>
+        <p class="muted">Type code, pick a language, and let the tutor explain what the code does, why it breaks, and how to improve it.</p>
+        <div class="hero-actions">
+            <a class="btn btn-primary" asp-page="/Editor">Open Editor</a>
+            <a class="btn btn-outline-light" asp-page="/Learn">Start Learning</a>
+        </div>
+        <div class="stats-row">
+            <div class="stat-card">
+                <span>Languages</span>
+                <strong>HTML, CSS, JS, Python, C, C++, C#, F#, SQL, ACL</strong>
+            </div>
+            <div class="stat-card">
+                <span>Modes</span>
+                <strong>Fix, Explain, Run, Learn</strong>
+            </div>
+            <div class="stat-card">
+                <span>Focus</span>
+                <strong>Beginner-friendly teaching</strong>
+            </div>
+        </div>
+    </div>
+
+    <div class="dashboard-panel">
+        <div class="panel-head">
+            <h2>Live tutor workspace</h2>
+            <span class="pill">Dark mode default</span>
+        </div>
+        <div class="workspace-split">
+            <div>
+                <label class="form-label">Code</label>
+                <textarea id="editor-input" class="code-input" spellcheck="false">pritnt("hello")</textarea>
+            </div>
+            <div>
+                <label class="form-label">Tutor response</label>
+                <div class="tutor-output" id="tutor-output">
+                    <strong>Ready to teach.</strong>
+                    <p>Press Fix Code or Explain Code to see the tutor in action.</p>
+                </div>
+            </div>
+        </div>
+        <div class="workspace-actions">
+            <button class="btn btn-success" type="button" data-action="run">Run</button>
+            <button class="btn btn-warning" type="button" data-action="fix">Fix Code</button>
+            <button class="btn btn-info" type="button" data-action="explain">Explain Code</button>
+            <button class="btn btn-outline-light" type="button" data-action="learn">Learn Mode</button>
+        </div>
+    </div>
+</section>
+
+<section class="feature-grid">
+    <article class="feature-card">
+        <h3>Language detection</h3>
+        <p>Automatically identifies HTML, CSS, JavaScript, Python, C, C++, C#, F#, SQL, and ACL patterns.</p>
+    </article>
+    <article class="feature-card">
+        <h3>Code fix engine</h3>
+        <p>Fixes typos, missing punctuation, unbalanced symbols, and beginner mistakes with clear explanations.</p>
+    </article>
+    <article class="feature-card">
+        <h3>Learning progress</h3>
+        <p>Tracks mistakes, improvement, and the next topics the learner should study.</p>
+    </article>
+</section>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/monaco-editor@0.52.2/min/vs/loader.js"></script>
+    <script src="~/js/ai.js" asp-append-version="true"></script>
+    <script src="~/js/editor.js" asp-append-version="true"></script>
+}

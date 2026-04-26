@@ -1,0 +1,77 @@
+@page
+@{
+    ViewData["Title"] = "Editor";
+}
+
+<section class="page-hero">
+    <div>
+        <div class="eyebrow">Monaco coding workspace</div>
+        <h1>Write code on the left, get coaching on the right.</h1>
+        <p class="muted">AI tutor explains, fixes, and teaches your code in real time.</p>
+    </div>
+</section>
+
+<section class="editor-shell">
+
+    <!-- TOOLBAR -->
+    <div class="editor-toolbar">
+        <select id="language-select" class="form-select form-select-dark">
+            <option value="auto">Auto detect</option>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="javascript">JavaScript</option>
+            <option value="python">Python</option>
+            <option value="c">C</option>
+            <option value="cpp">C++</option>
+            <option value="csharp">C#</option>
+            <option value="fsharp">F#</option>
+            <option value="sql">SQL</option>
+            <option value="acl">ACL</option>
+        </select>
+
+        <button class="btn btn-warning" type="button" data-action="fix">Fix Code</button>
+        <button class="btn btn-info" type="button" data-action="explain">Explain Code</button>
+    </div>
+
+    <!-- MAIN GRID -->
+    <div class="editor-grid">
+
+        <!-- MONACO EDITOR -->
+        <div class="monaco-frame">
+            <div id="monaco-editor" class="monaco-editor"></div>
+        </div>
+
+        <!-- TUTOR PANEL -->
+        <aside class="tutor-panel">
+            <h2>AI Tutor</h2>
+
+            <div id="tutor-output" class="tutor-output">
+                Your AI explanations will appear here...
+            </div>
+
+            <div id="progress-output" class="progress-output"></div>
+        </aside>
+
+    </div>
+</section>
+
+@section Scripts {
+
+    <!-- Monaco -->
+    <script src="https://cdn.jsdelivr.net/npm/monaco-editor@0.52.2/min/vs/loader.js"></script>
+
+    <!-- Your AI logic -->
+    <script src="~/js/ai.js" asp-append-version="true"></script>
+    <script src="~/js/editor.js" asp-append-version="true"></script>
+
+    <script>
+        // 🔥 Basic bridge (IMPORTANT)
+        window.getEditorCode = function () {
+            return window.editorInstance?.getValue() || "";
+        };
+
+        window.setTutorOutput = function (html) {
+            document.getElementById("tutor-output").innerHTML = html;
+        };
+    </script>
+}

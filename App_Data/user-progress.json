@@ -1,0 +1,50 @@
+[
+  {
+    "UserId": "default",
+    "TotalSubmissions": 7,
+    "FixedSubmissions": 7,
+    "LastLanguage": "Python",
+    "LastUpdatedUtc": "2026-04-26T00:59:09.6498337+00:00",
+    "MistakeCounts": {
+      "Fixed the typo \u0027pritnt\u0027.": 2,
+      "No obvious beginner syntax issue was detected.": 5
+    },
+    "RecentMistakes": [
+      "No obvious beginner syntax issue was detected.",
+      "Fixed the typo \u0027pritnt\u0027.",
+      "No obvious beginner syntax issue was detected.",
+      "No obvious beginner syntax issue was detected.",
+      "No obvious beginner syntax issue was detected.",
+      "No obvious beginner syntax issue was detected.",
+      "Fixed the typo \u0027pritnt\u0027."
+    ],
+    "LearnedTopics": [
+      "Unknown",
+      "Python"
+    ]
+  },
+  {
+    "UserId": "user-4akktq7u",
+    "TotalSubmissions": 7,
+    "FixedSubmissions": 7,
+    "LastLanguage": "Python",
+    "LastUpdatedUtc": "2026-04-26T00:59:09.6539822+00:00",
+    "MistakeCounts": {
+      "Fixed the typo \u0027pritnt\u0027.": 2,
+      "No obvious beginner syntax issue was detected.": 5
+    },
+    "RecentMistakes": [
+      "No obvious beginner syntax issue was detected.",
+      "Fixed the typo \u0027pritnt\u0027.",
+      "No obvious beginner syntax issue was detected.",
+      "No obvious beginner syntax issue was detected.",
+      "No obvious beginner syntax issue was detected.",
+      "No obvious beginner syntax issue was detected.",
+      "Fixed the typo \u0027pritnt\u0027."
+    ],
+    "LearnedTopics": [
+      "Unknown",
+      "Python"
+    ]
+  }
+]

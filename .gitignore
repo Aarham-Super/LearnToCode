@@ -1,0 +1,78 @@
+# =========================
+# BUILD OUTPUT
+# =========================
+bin/
+obj/
+out/
+publish/
+*.dll
+*.exe
+*.pdb
+*.cache
+
+# =========================
+# VISUAL STUDIO
+# =========================
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# =========================
+# DOTNET / ASP.NET CORE
+# =========================
+appsettings.Development.json
+appsettings.Local.json
+*.db
+*.sqlite
+*.sqlite3
+
+# Sensitive configs
+appsettings.*.json
+!appsettings.json
+
+# =========================
+# NODE (if used in frontend)
+# =========================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# =========================
+# ENV / SECRETS (VERY IMPORTANT)
+# =========================
+.env
+*.env
+secrets.json
+secrets.*
+*.key
+
+# API keys / secrets
+*.pem
+*.pfx
+
+# =========================
+# LOGS
+# =========================
+logs/
+*.log
+
+# =========================
+# PUBLISH / DEPLOY
+# =========================
+publish/
+wwwroot/lib/
+
+# =========================
+# OS FILES
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# USER LOCAL DATA
+# =========================
+*.cache
+*.tmp

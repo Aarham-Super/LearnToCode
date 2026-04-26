@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - LearnToCode</title>
+
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/theme.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/editor.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+
+<body>
+
+<!-- ================= TOPBAR ================= -->
+<header class="topbar">
+    <div class="topbar__inner">
+
+        <!-- BRAND -->
+        <a class="brand" asp-page="/Index">
+            <img src="/images/logo.jpg" alt="LearnToCode Logo" class="brand__logo" />
+
+            <div class="brand__text-wrap">
+                <span class="brand__text">LearnToCode</span>
+                <span class="brand__sub">LTC</span>
+            </div>
+        </a>
+
+        <!-- NAV -->
+        <nav class="topbar__nav">
+            <a asp-page="/Index">Dashboard</a>
+            <a asp-page="/Learn">Learn</a>
+            <a asp-page="/Editor">Editor</a>
+            <a asp-page="/Tutor">Tutor</a>
+        </nav>
+
+        <!-- ACTIONS -->
+        <div class="topbar__actions">
+            <button class="btn-ai">AI Mode</button>
+            <button class="btn-login">Login</button>
+        </div>
+
+    </div>
+</header>
+
+<!-- ================= MAIN ================= -->
+<main class="page-shell">
+    @RenderBody()
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="page-footer">
+    <div>
+        ⚡ LearnToCode (LTC) — AI coding tutor that explains, fixes, and teaches step-by-step.
+        <br />
+        <small>Made by Aarham • © @DateTime.Now.Year All rights reserved</small>
+    </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
+
+@await RenderSectionAsync("Scripts", required: false)
+
+</body>
+</html>
